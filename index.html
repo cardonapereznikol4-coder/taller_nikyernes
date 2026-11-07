@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModaExpress | Nikol, Yeraldin & Nestor</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente elegante de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación -->
+    <header>
+        <div class="logo">Moda<span>Express</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#creadores">Creadores</a></li>
+                <li><a href="#favoritos">Mis Favoritos (<span id="fav-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero / Portada -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="badge">Nueva Colección 2026</span>
+            <h1>Moda, Tendencia & Estilo Chic</h1>
+            <p>Diseñado y curado por Nikol, Yeraldin y Nestor.</p>
+            <a href="#coleccion" class="btn">Ver Catálogo Completo ✨</a>
+        </div>
+    </section>
+
+    <!-- Creadores -->
+    <section id="creadores" class="creadores-section">
+        <h2>Nuestros Diseñadores</h2>
+        <div class="creadores-grid">
+            <div class="card-creador">
+                <div class="icon-avatar">✨</div>
+                <h3>Nikol</h3>
+                <p>Dirección Creativa & Tendencias</p>
+            </div>
+            <div class="card-creador">
+                <div class="icon-avatar">🌸</div>
+                <h3>Yeraldin</h3>
+                <p>Diseño de Vestuario & Texturas</p>
+            </div>
+            <div class="card-creador">
+                <div class="icon-avatar">💫</div>
+                <h3>Nestor</h3>
+                <p>Estilo Urbano & Fotografía</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Moda -->
+    <section id="coleccion" class="productos-section">
+        <h2>Colección Destacada</h2>
+        <p class="subtitle-section">Descubre las prendas más exclusivas de la temporada</p>
+        <div class="productos-grid" id="productos-container">
+            <!-- Los productos se cargan dinámicamente desde app.js -->
+        </div>
+    </section>
+
+    <!-- Lista de Favoritos Guardados -->
+    <section id="favoritos" class="favoritos-section">
+        <h2>Tus Prendas Favoritas</h2>
+        <p class="subtext">Prendas guardadas en tu guardarropa personal</p>
+        <div class="favoritos-grid" id="favoritos-container">
+            <p class="empty-msg">Aún no has agregado prendas a tus favoritos 💖</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ModaExpress — Creado con 💕 por Nikol, Yeraldin y Nestor.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
